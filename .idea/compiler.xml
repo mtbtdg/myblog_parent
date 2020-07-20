@@ -16,12 +16,6 @@
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="myblog" target="1.7" />
-      <module name="myblog_common" target="1.7" />
-      <module name="myblog_dao" target="1.7" />
-      <module name="myblog_domain" target="1.7" />
-      <module name="myblog_index_interface" target="1.7" />
-      <module name="myblog_index_service" target="1.7" />
-      <module name="myblog_poral_web" target="1.7" />
     </bytecodeTargetLevel>
   </component>
 </project>
