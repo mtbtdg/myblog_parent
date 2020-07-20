@@ -15,7 +15,12 @@
     <link href="https://lib.baomitu.com/font-awesome/5.8.0/css/fontawesome.min.css" rel="stylesheet">
     <link rel="stylesheet" href="../static/css/all.css">
     <link rel="stylesheet" href="../static/css/index.css">
-    <link rel="stylesheet" href="../static/css/plugs_paging.css">
+    <link rel="stylesheet" href="../static/plugins/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../static/plugins/adminLTE/css/AdminLTE.css">
+    <link rel="stylesheet" href="../static/plugins/adminLTE/css/skins/_all-skins.min.css">
+    <link rel="stylesheet" href="../static/css/style.css">
+    <!--<link rel="stylesheet" href="../static/css/plugs_paging.css">-->
+    <link rel="stylesheet" href="../static/plugins/angularjs/pagination.css">
 
     <script src="https://lib.baomitu.com/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://lib.baomitu.com/underscore.js/1.9.1/underscore-min.js"></script>
@@ -26,10 +31,11 @@
     <script type="text/javascript" src="../static/plugins/angularjs/angular.min.js"></script>
     <script type="text/javascript" src="../static/plugins/angularjs/pagination.js"></script>
     <script type="text/javascript" src="../static/js/base_pagination.js" ></script>
+    <script type="text/javascript" src="../static/js/controller/baseController.js"></script>
     <script type="text/javascript" src="../static/js/controller/indexController.js" ></script>
 
 </head>
-<body ng-app="myblog" ng-controller="indexController" ng-init="">
+<body ng-app="myblog" ng-controller="indexController" ng-init="reloadArticleList()">
 <div id="app">
     <!--主页头部含有小屏幕时名片，不应使用共有头部-->
     <div class="header">
@@ -328,36 +334,12 @@
                 </div>
             </div>
             <div class="showArticle am-u-sm-12 am-u-lg-6">
-                <div class="articles">
+                <div ng-repeat="article in list" class="articles">
                     <div class="center">
                         <div class="empty">
                             <header class="article-header">
                                 <h1 itemprop="name">
-                                    <a class="article-title" href="#" target="_blank">&nbsp;</a>
-                                </h1>
-                                <div class="article-meta row">
-                                    <span class="articleType am-badge am-badge-success">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
-
-                                </div>
-                            </header>
-                            <div class="article-entry" style="height: 200px">
-                            </div>
-                            <div class="read-all">
-                                <a href="#" target="_blank">阅读全文 <i class="am-icon-angle-double-right"></i></a>
-                            </div>
-                            <hr>
-                            <div class="article-tags">
-                                <i class="am-icon-tag"><a class="tag" href="#"> &nbsp;&nbsp;&nbsp;&nbsp;</a></i>
-                                <i class="am-icon-tag"><a class="tag" href="#"> &nbsp;&nbsp;&nbsp;&nbsp;</a></i>
-                                <!--<span class="likes"><i class="am-icon-heart"> 个喜欢</i></span>-->
-                            </div>
-                        </div>
-                    </div>
-                    <div class="center">
-                        <div class="empty">
-                            <header class="article-header">
-                                <h1 itemprop="name">
-                                    <a class="article-title" href="#" target="_blank">&nbsp;</a>
+                                    <a class="article-title" href="#" target="_blank">{{article.articletitle}}</a>
                                 </h1>
                                 <div class="article-meta row">
                                     <span class="articleType am-badge am-badge-success">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
@@ -376,77 +358,11 @@
                             </div>
                         </div>
                     </div>
-                    <div class="center">
-                        <div class="empty">
-                            <header class="article-header">
-                                <h1 itemprop="name">
-                                    <a class="article-title" href="#" target="_blank">&nbsp;</a>
-                                </h1>
-                                <div class="article-meta row">
-                                    <span class="articleType am-badge am-badge-success">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
 
-                                </div>
-                            </header>
-                            <div class="article-entry" style="height: 200px">
-                            </div>
-                            <div class="read-all">
-                                <a href="#" target="_blank">阅读全文 <i class="am-icon-angle-double-right"></i></a>
-                            </div>
-                            <hr>
-                            <div class="article-tags">
-                                <i class="am-icon-tag"><a class="tag" href="#"> &nbsp;&nbsp;&nbsp;&nbsp;</a></i>
-                                <i class="am-icon-tag"><a class="tag" href="#"> &nbsp;&nbsp;&nbsp;&nbsp;</a></i>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="center">
-                        <div class="empty">
-                            <header class="article-header">
-                                <h1 itemprop="name">
-                                    <a class="article-title" href="#" target="_blank">&nbsp;</a>
-                                </h1>
-                                <div class="article-meta row">
-                                    <span class="articleType am-badge am-badge-success">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
-
-                                </div>
-                            </header>
-                            <div class="article-entry" style="height: 200px">
-                            </div>
-                            <div class="read-all">
-                                <a href="#" target="_blank">阅读全文 <i class="am-icon-angle-double-right"></i></a>
-                            </div>
-                            <hr>
-                            <div class="article-tags">
-                                <i class="am-icon-tag"><a class="tag" href="#"> &nbsp;&nbsp;&nbsp;&nbsp;</a></i>
-                                <i class="am-icon-tag"><a class="tag" href="#"> &nbsp;&nbsp;&nbsp;&nbsp;</a></i>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="center">
-                        <div class="empty">
-                            <header class="article-header">
-                                <h1 itemprop="name">
-                                    <a class="article-title" href="#" target="_blank">&nbsp;</a>
-                                </h1>
-                                <div class="article-meta row">
-                                    <span class="articleType am-badge am-badge-success">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
-
-                                </div>
-                            </header>
-                            <div class="article-entry" style="height: 200px">
-                            </div>
-                            <div class="read-all">
-                                <a href="#" target="_blank">阅读全文 <i class="am-icon-angle-double-right"></i></a>
-                            </div>
-                            <hr>
-                            <div class="article-tags">
-                                <i class="am-icon-tag"><a class="tag" href="#"> &nbsp;&nbsp;&nbsp;&nbsp;</a></i>
-                                <i class="am-icon-tag"><a class="tag" href="#"> &nbsp;&nbsp;&nbsp;&nbsp;</a></i>
-                            </div>
-                        </div>
-                    </div>
                 </div>
-                <div class="my-row" id="page-father">
+                <!--数据分页数据栏-->
+                <tm-pagination conf="paginationConf"/>
+                <!--<div class="my-row" id="page-father">
                     <div id="pagination">
                         <ul class="am-pagination  am-pagination-centered">
                             <li class="am-disabled"><a href="#">&laquo; 上一页</a></li>
@@ -458,7 +374,7 @@
                             <li><a href="#">下一页 &raquo;</a></li>
                         </ul>
                     </div>
-                </div>
+                </div>-->
                 <div class="new-comment am-show-sm-only">
                     <div data-am-widget="list_news" class="am-list-news am-list-news-default" >
                         <div class="am-list-news-hd am-cf">

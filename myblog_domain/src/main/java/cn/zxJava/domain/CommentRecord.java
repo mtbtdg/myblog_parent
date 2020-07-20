@@ -1,6 +1,8 @@
 package cn.zxJava.domain;
 
-public class CommentRecord {
+import java.io.Serializable;
+
+public class CommentRecord implements Serializable {
     private Long id;
 
     private Long pid;

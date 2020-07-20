@@ -1,6 +1,8 @@
 package cn.zxJava.domain;
 
-public class Categories {
+import java.io.Serializable;
+
+public class Categories implements Serializable {
     private Integer id;
 
     private String categoryname;

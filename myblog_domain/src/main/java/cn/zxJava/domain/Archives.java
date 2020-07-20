@@ -1,6 +1,8 @@
 package cn.zxJava.domain;
 
-public class Archives {
+import java.io.Serializable;
+
+public class Archives implements Serializable {
     private Integer id;
 
     private String archivename;

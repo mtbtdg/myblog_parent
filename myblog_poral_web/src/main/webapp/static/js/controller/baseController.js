@@ -14,7 +14,7 @@ app.controller("baseController",function($scope){
         // 数据改变数据，当点击上一页、下一页等触发该方法
         onChange: function(){
             // 重新加载，获取数据的方法
-            $scope.reloadList();
+            $scope.reloadArticleList();
         }
     };
 

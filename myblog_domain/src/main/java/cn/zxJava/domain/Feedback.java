@@ -1,6 +1,8 @@
 package cn.zxJava.domain;
 
-public class Feedback {
+import java.io.Serializable;
+
+public class Feedback implements Serializable {
     private Integer id;
 
     private String contactinfo;

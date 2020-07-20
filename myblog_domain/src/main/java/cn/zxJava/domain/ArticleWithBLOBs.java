@@ -1,6 +1,8 @@
 package cn.zxJava.domain;
 
-public class ArticleWithBLOBs extends Article {
+import java.io.Serializable;
+
+public class ArticleWithBLOBs extends Article implements Serializable {
     private String articlecontent;
 
     private String articletabloid;

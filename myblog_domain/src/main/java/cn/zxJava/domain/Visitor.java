@@ -1,6 +1,8 @@
 package cn.zxJava.domain;
 
-public class Visitor {
+import java.io.Serializable;
+
+public class Visitor implements Serializable {
     private Integer id;
 
     private Long visitornum;

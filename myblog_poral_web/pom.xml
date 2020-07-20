@@ -81,6 +81,32 @@
             <scope>provided</scope>
         </dependency>
 
+        <!--&lt;!&ndash;SpringSecurity框架坐标&ndash;&gt;
+        <dependency>
+            <groupId>org.springframework.security</groupId>
+            <artifactId>spring-security-web</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.security</groupId>
+            <artifactId>spring-security-config</artifactId>
+        </dependency>
+
+        &lt;!&ndash;SpringSecurity整合CAS框架坐标依赖&ndash;&gt;
+        <dependency>
+            <groupId>org.springframework.security</groupId>
+            <artifactId>spring-security-cas</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.jasig.cas.client</groupId>
+            <artifactId>cas-client-core</artifactId>
+            <exclusions>
+                <exclusion>
+                    <groupId>org.slf4j</groupId>
+                    <artifactId>log4j-over-slf4j</artifactId>
+                </exclusion>
+            </exclusions>
+        </dependency>-->
+
         <dependency>
             <groupId>cn.zxJava</groupId>
             <artifactId>myblog_index_service</artifactId>

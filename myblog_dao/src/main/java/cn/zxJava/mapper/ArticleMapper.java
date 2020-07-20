@@ -7,6 +7,7 @@ import java.util.List;
 import org.apache.ibatis.annotations.Param;
 
 public interface ArticleMapper {
+    List<Article> findAll();
     int countByExample(ArticleExample example);
 
     int deleteByExample(ArticleExample example);

@@ -1,6 +1,8 @@
 package cn.zxJava.domain;
 
-public class Friendlink {
+import java.io.Serializable;
+
+public class Friendlink implements Serializable {
     private Integer id;
 
     private String blogger;

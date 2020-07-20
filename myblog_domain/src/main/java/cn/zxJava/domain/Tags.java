@@ -1,6 +1,8 @@
 package cn.zxJava.domain;
 
-public class Tags {
+import java.io.Serializable;
+
+public class Tags implements Serializable {
     private Integer id;
 
     private String tagname;

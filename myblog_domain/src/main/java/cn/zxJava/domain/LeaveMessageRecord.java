@@ -1,6 +1,8 @@
 package cn.zxJava.domain;
 
-public class LeaveMessageRecord {
+import java.io.Serializable;
+
+public class LeaveMessageRecord implements Serializable {
     private Integer id;
 
     private String pagename;

@@ -1,6 +1,8 @@
 package cn.zxJava.domain;
 
-public class ArticleLikesRecord {
+import java.io.Serializable;
+
+public class ArticleLikesRecord implements Serializable {
     private Integer id;
 
     private Long articleid;

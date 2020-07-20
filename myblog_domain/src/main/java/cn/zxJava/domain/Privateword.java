@@ -1,6 +1,8 @@
 package cn.zxJava.domain;
 
-public class Privateword {
+import java.io.Serializable;
+
+public class Privateword implements Serializable {
     private Integer id;
 
     private String privateword;
