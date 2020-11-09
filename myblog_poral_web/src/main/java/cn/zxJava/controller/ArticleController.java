@@ -29,7 +29,7 @@ public class ArticleController {
 
         try {
             PageInfo<Article> pageInfo = articleService.findPage(pageNum,pageSize);
-
+            System.out.println("hello world");
             return new Result(true,"操作成功",pageInfo.getTotal(),pageInfo.getList());
         } catch (Exception e) {
             e.printStackTrace();

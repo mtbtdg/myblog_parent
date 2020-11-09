@@ -8,10 +8,10 @@
         <outputRelativeToContentRoot value="true" />
         <module name="myblog_common" />
         <module name="myblog_dao" />
-        <module name="myblog_domain" />
+        <module name="myblog_poral_web" />
         <module name="myblog_index_interface" />
         <module name="myblog_index_service" />
-        <module name="myblog_poral_web" />
+        <module name="myblog_domain" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
