@@ -49,6 +49,6 @@ public class WebConfig implements WebMvcConfigurer {
         //配置静态资源映射
         registry.addResourceHandler("/article/**").addResourceLocations("classpath:/static/");
         registry.addResourceHandler("/**").addResourceLocations("classpath:/static/");
-        registry.addResourceHandler("/template/**").addResourceLocations("classpath:/static/");
+        registry.addResourceHandler("/templates/**").addResourceLocations("classpath:/static/");
     }
 }
