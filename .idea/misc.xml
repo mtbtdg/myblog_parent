@@ -10,6 +10,16 @@
         <option value="$PROJECT_DIR$/pom.xml" />
       </list>
     </option>
+    <option name="ignoredFiles">
+      <set>
+        <option value="$PROJECT_DIR$/myblog_common/pom.xml" />
+        <option value="$PROJECT_DIR$/myblog_dao/pom.xml" />
+        <option value="$PROJECT_DIR$/myblog_domain/pom.xml" />
+        <option value="$PROJECT_DIR$/myblog_index_interface/pom.xml" />
+        <option value="$PROJECT_DIR$/myblog_index_service/pom.xml" />
+        <option value="$PROJECT_DIR$/myblog_poral_web/pom.xml" />
+      </set>
+    </option>
   </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" project-jdk-name="1.8" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/out" />

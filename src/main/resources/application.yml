@@ -1,0 +1,41 @@
+spring:
+  #数据源的配置
+  datasource:
+    url: jdbc:mysql://localhost:3306/myblogdb?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=GMT%2B8
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password: 123456
+    type: com.alibaba.druid.pool.DruidDataSource
+    initialSize: 5
+    minIdle: 5
+    maxActive: 20
+    maxWait: 60000
+    timeBetweenEvictionRunsMillis: 60000
+    minEvictableIdleTimeMillis: 300000
+    validationQuery: SELECT 1 FROM DUAL
+    testWhileIdle: true
+    testOnBorrow: false
+    testOnReturn: false
+    poolPreparedStatements: true
+    filters: stat,wall,log4j
+    maxPoolPreparedStatementPerConnectionSize: 20
+    useGlobalDataSourceStat: true
+    connectionProperties: druid.stat.mergeSql=true;druid.stat.slowSqlMillis=500
+  mvc:
+    date-format: yyyy-MM-dd
+
+#tomcat配置
+server:
+  port: 8084
+  servlet:
+    context-path: /myblog
+
+#mybatis配置
+mybatis:
+  #配置mapper.xml的路径
+  mapper-locations: classpath:mappers/*.xml
+  configuration:
+    #开启下划线模式与驼峰模式的匹配
+    map-underscore-to-camel-case: true
+  #设置需要使用别名的包路径
+  type-aliases-package: cn.zxJava.model
