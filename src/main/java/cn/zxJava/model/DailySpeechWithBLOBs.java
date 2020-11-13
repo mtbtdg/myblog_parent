@@ -1,8 +1,6 @@
 package cn.zxJava.model;
 
-import java.io.Serializable;
-
-public class DailySpeechWithBLOBs extends DailySpeech implements Serializable {
+public class DailySpeechWithBLOBs extends DailySpeech {
     private String content;
 
     private String picsurl;

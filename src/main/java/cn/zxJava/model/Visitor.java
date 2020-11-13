@@ -1,8 +1,6 @@
 package cn.zxJava.model;
 
-import java.io.Serializable;
-
-public class Visitor implements Serializable {
+public class Visitor {
     private Integer id;
 
     private Long visitornum;

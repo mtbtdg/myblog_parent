@@ -1,7 +1,9 @@
 package cn.zxJava.service.impl;
 
 import cn.zxJava.mapper.ArticleMapper;
+import cn.zxJava.mapper.UserMapper;
 import cn.zxJava.model.Article;
+import cn.zxJava.model.User;
 import cn.zxJava.service.IndexService;
 import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
@@ -23,14 +25,17 @@ import java.util.List;
 @Transactional
 public class IndexServiceImpl implements IndexService {
     @Autowired
+    private UserMapper userMapper;
+    @Autowired
     private ArticleMapper articleMapper;
 
     /**
         * @param pageNum:当前页码
-    	* @param pageSize:每页展示数量
-        * @return com.github.pagehelper.PageInfo<cn.zxJava.model.Article> 
-        * @author zx
-        * @date 2020/11/9 0009 23:18
+    	* @param pageSize:分页条数
+        * @return com.github.pagehelper.PageInfo<cn.zxJava.model.Article>
+        * @description:主页文章数据分页展示
+        * @author:zx
+        * @date:2020/11/12 0012 17:46
     */
     @Override
     public PageInfo<Article> findPage(int pageNum, int pageSize) {
@@ -40,5 +45,11 @@ public class IndexServiceImpl implements IndexService {
         List<Article> list = articleMapper.selectByExample(null);
         //封装数据
         return new PageInfo<>(list);
+    }
+
+    @Override
+    public User findLoginMessage(String loginPhone) {
+        User user =  userMapper.LoginByPhone(loginPhone);
+        return user;
     }
 }

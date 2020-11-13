@@ -16,7 +16,7 @@
                 width: "100%",
                 height: 740,
                 syncScrolling: true, //设置双向滚动
-                path: "../static/lib/", //lib目录的路径
+                path: "../lib/", //lib目录的路径
                 previewTheme : "dark", //代码块使用dark主题
                 codeFold : true,
                 emoji:true,

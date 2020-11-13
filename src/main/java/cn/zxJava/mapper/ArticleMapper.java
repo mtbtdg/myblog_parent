@@ -3,12 +3,11 @@ package cn.zxJava.mapper;
 import cn.zxJava.model.Article;
 import cn.zxJava.model.ArticleExample;
 import cn.zxJava.model.ArticleWithBLOBs;
-import org.apache.ibatis.annotations.Param;;
+import org.apache.ibatis.annotations.Param;
 
 import java.util.List;
 
 public interface ArticleMapper {
-
     int countByExample(ArticleExample example);
 
     int deleteByExample(ArticleExample example);

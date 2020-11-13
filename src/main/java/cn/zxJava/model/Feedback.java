@@ -1,8 +1,6 @@
 package cn.zxJava.model;
 
-import java.io.Serializable;
-
-public class Feedback implements Serializable {
+public class Feedback {
     private Integer id;
 
     private String contactinfo;

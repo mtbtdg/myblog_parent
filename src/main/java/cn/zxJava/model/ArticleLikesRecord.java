@@ -1,8 +1,6 @@
 package cn.zxJava.model;
 
-import java.io.Serializable;
-
-public class ArticleLikesRecord implements Serializable {
+public class ArticleLikesRecord {
     private Integer id;
 
     private Long articleid;

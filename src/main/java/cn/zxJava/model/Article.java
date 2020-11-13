@@ -1,8 +1,6 @@
 package cn.zxJava.model;
 
-import java.io.Serializable;
-
-public class Article implements Serializable {
+public class Article {
     private Integer id;
 
     private Long articleid;

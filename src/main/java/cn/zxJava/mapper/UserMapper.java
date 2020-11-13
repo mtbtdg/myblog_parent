@@ -34,4 +34,6 @@ public interface UserMapper {
     int updateByPrimaryKeyWithBLOBs(User record);
 
     int updateByPrimaryKey(User record);
+
+    User LoginByPhone(String phone);
 }

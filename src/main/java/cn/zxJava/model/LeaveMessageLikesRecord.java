@@ -1,8 +1,6 @@
 package cn.zxJava.model;
 
-import java.io.Serializable;
-
-public class LeaveMessageLikesRecord implements Serializable {
+public class LeaveMessageLikesRecord {
     private Integer id;
 
     private String pagename;

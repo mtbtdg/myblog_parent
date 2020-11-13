@@ -20,4 +20,9 @@ app.controller("indexController",function($scope,$http,$controller){
         });
     };
 
+
+    $scope.getData = function (){
+        this.reloadArticleList();
+    }
+
 });

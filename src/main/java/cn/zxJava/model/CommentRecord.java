@@ -1,8 +1,6 @@
 package cn.zxJava.model;
 
-import java.io.Serializable;
-
-public class CommentRecord implements Serializable {
+public class CommentRecord {
     private Long id;
 
     private Long pid;

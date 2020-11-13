@@ -1,9 +1,8 @@
 package cn.zxJava.model;
 
-import java.io.Serializable;
 import java.util.Date;
 
-public class Reward implements Serializable {
+public class Reward {
     private Integer id;
 
     private String fundraiser;

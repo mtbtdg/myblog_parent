@@ -1,8 +1,6 @@
 package cn.zxJava.model;
 
-import java.io.Serializable;
-
-public class Categories implements Serializable {
+public class Categories {
     private Integer id;
 
     private String categoryname;

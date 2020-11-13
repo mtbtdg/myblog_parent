@@ -1,8 +1,6 @@
 package cn.zxJava.model;
 
-import java.io.Serializable;
-
-public class Privateword implements Serializable {
+public class Privateword {
     private Integer id;
 
     private String privateword;

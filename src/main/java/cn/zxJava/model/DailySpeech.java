@@ -1,9 +1,8 @@
 package cn.zxJava.model;
 
-import java.io.Serializable;
 import java.util.Date;
 
-public class DailySpeech implements Serializable {
+public class DailySpeech {
     private Integer id;
 
     private String mood;
